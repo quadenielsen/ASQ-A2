@@ -1,0 +1,8 @@
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoService.HiLoInstaller.resources
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoService.csproj.GenerateResource.cache
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoService.csproj.CoreCompileInputs.cache
+C:\Users\quade\source\repos\HiLoService\bin\Debug\HiLoService.exe.config
+C:\Users\quade\source\repos\HiLoService\bin\Debug\HiLoService.exe
+C:\Users\quade\source\repos\HiLoService\bin\Debug\HiLoService.pdb
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoService.exe
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoService.pdb

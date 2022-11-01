@@ -1,0 +1,8 @@
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoGameService.csproj.GenerateResource.cache
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoGameService.csproj.CoreCompileInputs.cache
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoService.HiLoGameInstaller.resources
+C:\Users\quade\source\repos\HiLoService\bin\Debug\HiLoGameService.exe
+C:\Users\quade\source\repos\HiLoService\bin\Debug\HiLoGameService.pdb
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoGameService.exe
+C:\Users\quade\source\repos\HiLoService\obj\Debug\HiLoGameService.pdb
+C:\Users\quade\source\repos\HiLoService\bin\Debug\HiLoGameService.exe.config
