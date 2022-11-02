@@ -3,7 +3,7 @@
  * Project:		HiLoServer
  * By:			Quade Nielsen
  * Date:		November 12, 2021
- * Description:	This file contains the GameEngine class for the Hi Lo Game.
+ * Description:	This file contains the GameEngine class for the Hi Lo Game.  
  */
 
 using System;
