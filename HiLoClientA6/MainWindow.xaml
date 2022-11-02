@@ -1,0 +1,104 @@
+﻿<Window x:Class="A5HiLoGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A5HiLoGame"
+        mc:Ignorable="d"
+        Title="HiLoGame" Height="450" Width="800" MinWidth="350" MinHeight="500" Closing="Window_Closing">
+    <Grid Background="#FFFFD9AB">
+
+        <TextBlock x:Name="lblTitle" TextWrapping="Wrap" Text="HiLo Game" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="40"/>
+        <Grid Name="ConnectionScreen" Height="400"  Margin="20" IsEnabled="False" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+                
+            <StackPanel Grid.Row="1">
+                <TextBlock x:Name="lblAddress" TextWrapping="Wrap" Text="IP Address:" HorizontalAlignment="Center" Margin="0, 0, 80, 0"/>
+                <TextBox x:Name="txbIPAddress" Height="23" TextWrapping="Wrap" Text="127.0.0.1" Width="140"/>
+                <TextBlock x:Name="tblAddressError" TextWrapping="Wrap" Width="186" Foreground="Red" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2">
+                <TextBlock x:Name="lblPort" TextWrapping="Wrap" Text="Port Number:" HorizontalAlignment="Center" Margin="0, 0, 70, 0"/>
+                <TextBox x:Name="txbPortNumber" Height="23" TextWrapping="Wrap" Text="11000" Width="140"/>
+                <TextBlock x:Name="tblPortError" TextWrapping="Wrap" Width="186" Foreground="Red" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3">
+                <TextBlock x:Name="lblName" TextWrapping="Wrap" Text="Player Name:" HorizontalAlignment="Center" Margin="0, 0, 70, 0"/>
+                <TextBox x:Name="txbName" Height="23" TextWrapping="Wrap" Text="Name" Width="140"/>
+                <TextBlock x:Name="tblNameError" TextWrapping="Wrap" Width="186" Foreground="Red" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4">
+                <Button x:Name="btnConnectToServer" Content="Connect to Server"  Width="150" Click="btnConnectToServer_Click" Canvas.Left="325" Canvas.Top="320"/>
+                <TextBlock x:Name="tblConnectionError" TextWrapping="Wrap" Width="186" Foreground="Red" Canvas.Left="305" Canvas.Top="344" TextAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Name="GameScreen" Height="400"  Margin="20" Visibility="Hidden" IsEnabled="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1">
+                <TextBlock x:Name="lblGuess" TextWrapping="Wrap" Text="Make a guess!" HorizontalAlignment="Center" Margin="0, 0, 0, 0" FontSize="24"/>
+                <TextBlock x:Name="lblGuessTaunt" TextWrapping="NoWrap" Text="" HorizontalAlignment="Center" Margin="0, 10, 0, 0" FontSize="16" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2">
+                <TextBlock x:Name="lblGuessPrompt" TextWrapping="NoWrap" Text="Guess a number between..." HorizontalAlignment="Center" Margin="0, 0, 0, 0"/>
+                <TextBox x:Name="txbGuess" Height="23" TextWrapping="Wrap" Text="" Width="140"/>
+                <TextBlock x:Name="tblGuessError" TextWrapping="Wrap" Width="186" Foreground="Red" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3">
+                <Button x:Name="btnSubmitGuess" Content="Guess!"  Width="150" Click="btnSubmitGuess_Click" Canvas.Left="325" Canvas.Top="320"/>
+                <TextBlock x:Name="tblSubmitError" TextWrapping="Wrap" Width="186" Foreground="Red" Canvas.Left="305" Canvas.Top="344" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4">
+
+            </StackPanel>
+        </Grid>
+
+        <Grid Name="WinScreen" Height="400"  Margin="20" Visibility="Hidden" IsEnabled="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1">
+                <TextBlock x:Name="lblWin" TextWrapping="Wrap" Text="You win!" HorizontalAlignment="Center" Margin="0, 0, 0, 0" FontSize="24"/>
+                <TextBlock x:Name="lblPlayAgain" TextWrapping="NoWrap" Text="" HorizontalAlignment="Center" Margin="0, 10, 0, 0" FontSize="16" Width="250" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2">
+                <Button x:Name="btnPlayAgain" Content="Play again!"  Width="150" Click="btnPlayAgain_Click" Margin="0, 20"/>
+                <Button x:Name="btnReturnToConnectScreen" Content="No, thanks!"  Width="150" Click="btnReturnToConnectScreen_Click" Margin="0,0,0,0"/>
+            </StackPanel>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

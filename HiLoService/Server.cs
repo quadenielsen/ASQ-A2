@@ -31,8 +31,9 @@ namespace HiLoService
 		private static volatile bool acceptingConnections = false;   //bool 
 
 
-		private IPEndPoint localEndPoint; //the IPEndPoint for the listener socket of the server
-		private Socket listener; //the socket that will listen for incoming connections to the server
+		private readonly IPEndPoint localEndPoint; //the IPEndPoint for the listener socket of the server
+		private readonly Socket listener; //the socket that will listen for incoming connections to the server
+		private readonly int queueSize; //the size of the pending connections queue for the socket
 		private Thread listenerThread;  //a thread for the listener socket
 
 		private enum querySubstrings //the indices for the array of strings which the server will parse out of the client's messages
@@ -57,6 +58,7 @@ namespace HiLoService
 				localEndPoint = new IPEndPoint(ipAddress, port);
 
 				listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+				queueSize = 10; //default size of the pending connections queue for the socket
 				listenerThread = new Thread(Listen);
 			}
 			catch (Exception ex)
@@ -89,7 +91,7 @@ namespace HiLoService
 				try
 				{
 					listener.Bind(localEndPoint);
-					listener.Listen(10);
+					listener.Listen(queueSize);
 					acceptingConnections = true;
 					listenerThread.Start(players);
 				}

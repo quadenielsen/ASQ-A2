@@ -1,0 +1,14 @@
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoServicetestHarness.exe.config
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoServicetestHarness.exe
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoServicetestHarness.pdb
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoClientA6.exe
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoClientA6.pdb
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoClientA6.exe.config
+C:\Users\quade\source\repos\HiLoServicetestHarness\obj\Debug\HiLoServicetestHarness.csproj.AssemblyReference.cache
+C:\Users\quade\source\repos\HiLoServicetestHarness\obj\Debug\HiLoServicetestHarness.csproj.CoreCompileInputs.cache
+C:\Users\quade\source\repos\HiLoServicetestHarness\obj\Debug\HiLoServicetestHarness.csproj.CopyComplete
+C:\Users\quade\source\repos\HiLoServicetestHarness\obj\Debug\HiLoServicetestHarness.exe
+C:\Users\quade\source\repos\HiLoServicetestHarness\obj\Debug\HiLoServicetestHarness.pdb
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoGameService.exe
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoGameService.pdb
+C:\Users\quade\source\repos\HiLoServicetestHarness\bin\Debug\HiLoGameService.exe.config

@@ -1,0 +1,12 @@
+Created local endpoint. Occurred at: 2021-11-25 10:52:00 PM
+Created listener socket. Occurred at: 2021-11-25 10:52:00 PM
+Server was started. Occurred at: 2021-11-25 10:52:00 PM
+Entered the StartSever method. Occurred at: 2021-11-25 10:52:00 PM
+GameEngine read the config file. Occurred at: 2021-11-25 10:52:00 PM
+Created list of players. Occurred at: 2021-11-25 10:52:00 PM
+Waiting for a connection. Occurred at: 2021-11-25 10:52:00 PM
+Attempting to stop server. Occurred at: 2021-11-25 10:52:02 PM
+A blocking operation was interrupted by a call to WSACancelBlockingCall Occurred at: 2021-11-25 10:52:02 PM
+Exiting StartServer function. Occurred at: 2021-11-25 10:52:02 PM
+Closed the listening socket. Occurred at: 2021-11-25 10:52:02 PM
+Server was stopped. Occurred at: 2021-11-25 10:52:02 PM
