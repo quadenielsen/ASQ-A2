@@ -247,8 +247,8 @@ namespace A5HiLoGame
 				tblGuessError.Text = "Guess must not be blank!";
 				errorExists = true;
 			}
-			
-			if (errorExists) return false;
+
+			if (errorExists) { return false; }
 			return true;
 		}
 
