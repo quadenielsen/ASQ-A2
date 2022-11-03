@@ -16,6 +16,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Configuration;
 using HiLoObjects;
+using System.Data.SqlClient;
 
 namespace HiLoService
 {
@@ -35,6 +36,8 @@ namespace HiLoService
 		private readonly Socket listener; //the socket that will listen for incoming connections to the server
 		private readonly int queueSize; //the size of the pending connections queue for the socket
 		private Thread listenerThread;  //a thread for the listener socket
+
+		private readonly int magical;
 
 		private enum querySubstrings //the indices for the array of strings which the server will parse out of the client's messages
 		{
@@ -60,6 +63,8 @@ namespace HiLoService
 				listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 				queueSize = 10; //default size of the pending connections queue for the socket
 				listenerThread = new Thread(Listen);
+
+				magical = 10 + 11 + 12;
 			}
 			catch (Exception ex)
 			{
